@@ -1,0 +1,4 @@
+flask
+mysqlclient
+flask_restful
+flask_httpauth

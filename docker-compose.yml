@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  db:
+    container_name: mysql-local-flask
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: users
+      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db_mysql
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+    container_name: phpmyadmin-locallll
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "8088:80"

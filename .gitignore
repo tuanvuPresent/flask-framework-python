@@ -1,0 +1,13 @@
+# Created by https://www.gitignore.io/api/osx,linux,python,windows,pycharm,visualstudiocode
+
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# IDE
+../.idea/
+.idea/
+venv/
+migrations/
+data/
